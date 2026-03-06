@@ -1,0 +1,525 @@
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#f4f6f8;
+line-height:1.6;
+}
+
+/* ================= CONTAINER ================= */
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
+
+/* ================= HEADER ================= */
+
+.header{
+background:#0f6b78;
+color:white;
+padding:15px 0;
+}
+
+.header .container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+/* ================= LOGO ================= */
+
+.logo-container{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo{
+height:45px;
+width:auto;
+}
+
+.site-name{
+font-size:22px;
+font-weight:700;
+color:white;
+}
+
+/* ================= NAVIGATION ================= */
+
+.nav{
+display:flex;
+gap:25px;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.nav a{
+color:white;
+text-decoration:none;
+font-weight:600;
+}
+
+/* ================= DROPDOWN ================= */
+
+.dropdown{
+position:relative;
+}
+
+.dropbtn{
+background:none;
+border:none;
+font-size:16px;
+cursor:pointer;
+color:white;
+font-weight:600;
+}
+
+.dropdown-content{
+display:none;
+position:absolute;
+top:35px;
+background:white;
+min-width:200px;
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
+border-radius:6px;
+padding:10px;
+z-index:999;
+}
+
+.dropdown-content a{
+display:block;
+padding:10px;
+text-decoration:none;
+color:#333;
+}
+
+.dropdown-content a:hover{
+background:#f1f5f9;
+}
+
+.dropdown:hover .dropdown-content{
+display:block;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+background:#e8f5f7;
+text-align:center;
+padding:80px 20px;
+}
+
+.primary-btn{
+background:#0b7285;
+color:white;
+padding:12px 24px;
+text-decoration:none;
+border-radius:6px;
+}
+
+/* ================= GRID ================= */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card,
+.feature,
+.blog-card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ================= NEWSLETTER ================= */
+
+.newsletter{
+background:#0b7285;
+color:white;
+text-align:center;
+padding:40px;
+}
+
+.newsletter input{
+padding:10px;
+width:250px;
+}
+
+.newsletter button{
+padding:10px 20px;
+border:none;
+background:white;
+color:#0b7285;
+font-weight:bold;
+}
+
+/* ================= FOOTER ================= */
+
+.footer{
+text-align:center;
+padding:20px;
+background:#333;
+color:white;
+}
+
+/* ================= PAGE HERO ================= */
+
+.page-hero{
+background:#e8f5f7;
+padding:60px 20px;
+text-align:center;
+}
+
+/* ================= GUIDE CONTENT ================= */
+
+.guide-content{
+padding:40px 20px;
+}
+
+.guide-content h2{
+color:#0b7285;
+margin-top:30px;
+}
+
+.related-guides{
+background:#f4f6f8;
+padding:40px;
+}
+
+/* ================= CHECKLIST ================= */
+
+#checklist{
+list-style:none;
+padding:0;
+}
+
+#checklist li{
+margin:15px 0;
+font-size:18px;
+}
+
+#checklist input{
+margin-right:10px;
+}
+
+button{
+margin-top:20px;
+padding:10px 20px;
+background:#0b7285;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* ================= SEARCH ================= */
+
+.search-section{
+padding:40px;
+text-align:center;
+}
+
+#searchInput{
+width:60%;
+padding:12px;
+font-size:16px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+#searchResults{
+list-style:none;
+padding:0;
+margin-top:20px;
+}
+
+#searchResults li{
+background:white;
+margin:10px auto;
+padding:12px;
+max-width:500px;
+border-radius:6px;
+box-shadow:0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* ================= ARTICLE ================= */
+
+.article{
+padding:40px 20px;
+max-width:800px;
+margin:auto;
+}
+
+.article h1{
+color:#0b7285;
+}
+
+.article h2{
+margin-top:30px;
+color:#333;
+}
+
+/* ================= BLOG ================= */
+
+.blog-list{
+padding:40px;
+}
+
+.blog-card{
+background:white;
+padding:20px;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ================= SALARY TOOL ================= */
+
+.salary-tool{
+padding:40px;
+text-align:center;
+}
+
+.salary-tool select{
+padding:10px;
+font-size:16px;
+margin-top:10px;
+}
+
+#salaryResult{
+margin-top:30px;
+background:white;
+padding:20px;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ================= RESOURCES ================= */
+
+.resources{
+padding:40px;
+}
+
+.resource-card{
+background:white;
+padding:20px;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.resource-card a{
+display:inline-block;
+margin-top:10px;
+padding:10px 15px;
+background:#0b7285;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+/* ================= FAQ ================= */
+
+.faq-section{
+padding:40px;
+}
+
+.faq-item{
+margin-bottom:15px;
+}
+
+.faq-question{
+width:100%;
+text-align:left;
+padding:15px;
+font-size:16px;
+background:#0b7285;
+color:white;
+border:none;
+cursor:pointer;
+border-radius:5px;
+}
+
+.faq-answer{
+display:none;
+padding:15px;
+background:white;
+border-radius:5px;
+box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* ================= SOCIAL LINKS ================= */
+
+.social-links{
+margin-top:20px;
+}
+
+.social-links a{
+display:inline-block;
+margin-right:15px;
+font-size:22px;
+color:white;
+text-decoration:none;
+font-weight:600;
+}
+
+.social-links a:hover{
+color:#00a8b5;
+}
+
+/* ================= CONTACT ================= */
+
+.contact-section{
+padding:60px 20px;
+text-align:center;
+}
+
+.contact-options{
+margin-top:30px;
+}
+
+.contact-btn{
+display:inline-block;
+margin:10px;
+padding:15px 25px;
+background:#0b7285;
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-weight:600;
+}
+
+.contact-btn:hover{
+background:#099268;
+}
+
+/* ================= INFOGRAPHICS ================= */
+
+.infographic-section{
+margin:50px 0;
+text-align:center;
+}
+
+.infographic{
+width:100%;
+max-width:900px;
+height:auto;
+border-radius:8px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+.header{
+
+background:#0f6b78;
+padding:18px 0;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+
+}
+
+.header-container{
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+}
+
+.logo-container{
+
+display:flex;
+align-items:center;
+gap:12px;
+
+}
+
+.logo{
+
+height:45px;
+
+}
+
+.site-name{
+
+font-size:24px;
+font-weight:700;
+color:white;
+
+}
+
+.nav{
+
+display:flex;
+gap:28px;
+align-items:center;
+
+}
+
+.nav a{
+
+color:white;
+text-decoration:none;
+font-weight:600;
+font-size:16px;
+transition:0.3s;
+
+}
+
+.nav a:hover{
+
+color:#a5f3fc;
+
+}
+
+.dropdown{
+
+position:relative;
+
+}
+
+.dropbtn{
+
+background:none;
+border:none;
+color:white;
+font-weight:600;
+font-size:16px;
+cursor:pointer;
+
+}
+
+.dropdown-content{
+
+display:none;
+position:absolute;
+top:35px;
+background:white;
+border-radius:8px;
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+padding:10px;
+min-width:200px;
+
+}
+
+.dropdown-content a{
+
+display:block;
+padding:10px;
+color:#333;
+
+}
+
+.dropdown-content a:hover{
+
+background:#f1f5f9;
+
+}
+
+.dropdown:hover .dropdown-content{
+
+display:block;
+
+}
